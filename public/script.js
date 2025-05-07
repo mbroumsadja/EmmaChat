@@ -42,9 +42,10 @@ fileForm.addEventListener('submit', async (e) => {
 });
 
 // Handle incoming chat messages
-socket.on('chat message', (msg) => {
-  addMessage(msg, 'user');
-});
+
+// socket.on('chat message', (msg) => {
+//   addMessage(msg, 'user');
+// });
 
 // Handle incoming file shares
 socket.on('file shared', ({ filename, url }) => {
@@ -64,7 +65,7 @@ function addFileMessage(filename, url) {
   messageDiv.className = 'message file-message';
   const link = document.createElement('a');
   link.href = url;
-  link.textContent = `File: ${filename}`;
+  link.textContent = `${filename}`;
   link.download = filename;
   messageDiv.appendChild(link);
   chatContainer.appendChild(messageDiv);

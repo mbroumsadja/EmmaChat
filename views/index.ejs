@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Real-Time Chat & File Sharing</title>
-  <link rel="stylesheet" href="/styles.css">
+  <title> Easy File Sharing</title>
+  <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-  <h1>Real-Time Chat & File Sharing</h1>
+  <h1>File Sharing</h1>
   <div id="chat-container"></div>
   <form id="message-form">
     <input type="text" id="message-input" placeholder="Type your message..." required>
     <button type="submit">Send</button>
   </form>
   <form id="file-form" enctype="multipart/form-data">
-    <input type="file" id="file-input" accept=".txt,.pdf,.doc,.docx" required>
+    <input type="file" id="file-input" accept=".txt,.pdf,.doc,.docx,.mp4,.mp3" required>
     <button type="submit">Upload File</button>
   </form>
   <script src="/socket.io/socket.io.js"></script>

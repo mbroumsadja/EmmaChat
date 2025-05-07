@@ -31,6 +31,12 @@ const upload = multer({
       "application/pdf",
       "application/msword",
       "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "audio/mpeg",
+      "audio/wav",
+      "audio/ogg",
+      "video/mp4",
+      "video/x-matroska",
+      "video/webm",
     ];
     if (allowedTypes.includes(file.mimetype)) {
       cb(null, true);
